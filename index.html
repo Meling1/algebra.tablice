@@ -1,109 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tablice</title>
-</head>
-<style> table {border: 3px solid black;}
- th {border: 2px solid red}
- td {border: 1px solid green} </style>
-<body>
+  </head>
+  <style>
+    table {
+      border: 3px solid black;
+      border-collapse: collapse;
+    }
+    th {
+      border: 2px solid red;
+    }
+    td {
+      border: 1px solid green;
+    }
+  </style>
+  <body>
     <table style="border: 1px solid black">
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-        </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
     </table>
-    <hr>
+    <hr />
     <table>
-        <caption>Rezultati završnog ispita</caption>
-        <tr>
-            <th>Redni broj</th>
-            <th>Ime</th>
-            <th>Prezime</th>
-            <th>Zanimanje</th>
-            <th>Broj osvojenih bodova na ispitu</th>
-        </tr>
-        <tr>
-            <td>1.</td>
-            <td>Maja</td>
-            <td>Majić</td>
-            <td>Web dizajnerica</td>
-            <td>98</td>
-        </tr>
-        <tr>
-            <td>2.</td>
-            <td>Pero</td>
-            <td>Perić</td>
-            <td>poštar</td>
-            <td>82</td>
-        </tr>
-        <tr>
-            <td>3.</td>
-            <td>Ana</td>
-            <td>Aničić</td>
-            <td>nastavnica</td>
-            <td>76</td>
-        </tr>
- <tr>
-    <td>4.</td>        
-    <td>Mirko</td>
-            <td>Mirkovski</td>
-            <td>Saborski zastupnik</td>
-            <td>75</td>
-        </tr>
-         <tr>
-            <td>5.</td>
-            <td>Ivan</td>
-            <td>Ivančević</td>
-            <td>student</td>
-            <td>74</td>
-         </tr>
+      <caption>
+        Rezultati završnog ispita
+      </caption>
+      <tr>
+        <th>Redni broj</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Zanimanje</th>
+        <th>Broj osvojenih bodova na ispitu</th>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td>Maja</td>
+        <td>Majić</td>
+        <td>Web dizajnerica</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Pero</td>
+        <td>Perić</td>
+        <td>poštar</td>
+        <td>82</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Ana</td>
+        <td>Aničić</td>
+        <td>nastavnica</td>
+        <td>76</td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td>Mirko</td>
+        <td>Mirkovski</td>
+        <td>Saborski zastupnik</td>
+        <td>75</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td>Ivan</td>
+        <td>Ivančević</td>
+        <td>student</td>
+        <td>74</td>
+      </tr>
     </table>
-    <hr>
+    <hr />
+
+    <table style="border: 5px solid blue; width: 60%; text-align: center">
+      <caption>
+        Namirnice
+      </caption>
+      <thead>
+        <tr>
+          <th>namirnica</th>
+          <th>količina</th>
+          <th>predviđena potrošnja</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Trešnje</td>
+          <td>5kg</td>
+          <td>100kn</td>
+        </tr>
+
+        <tr>
+          <td>Breskve</td>
+          <td>2kg</td>
+          <td>20kn</td>
+        </tr>
+        <tr>
+          <td>Marelice</td>
+          <td>2kg</td>
+          <td>30kn</td>
+        </tr>
+      </tbody>
+      <tfoot style="background-color: yellow">
+        <tr>
+          <td>Ukupno:</td>
+          <td>9kg</td>
+          <td>150kn</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+
+    <table style="width: 100%">
+      <caption>
+        Tablica s vertikalnim headerom
+      </caption>
+      <tr>
+        <th>ime</th>
+        <td>Marko</td>
+        <td>Ivana</td>
+      </tr>
+      <tr>
+        <th>Prezime</th>
+        <td>Marković</td>
+        <td>Ivić-Marković</td>
+      </tr>
+      <tr>
+        <th>Godine</th>
+        <td>20</td>
+        <td>22</td>
+      </tr>
+    </table>
+    <hr />
 
     <table>
-        <caption>Namirnice</caption>
-        <thead>
-            <tr>
-                <th>namirnica</th>
-                <th>količina</th>
-                <th>predviđena potrošnja</th>
-            </tr>
-        </thead>
-            <tbody>
-                <tr>
-                    <td>Trešnje</td>
-                    <td>5kg</td>
-                    <td>100kn</td>
-                </tr>
-
-                <tr>
-                    <td>Breskve</td>
-                    <td>2kg</td>
-                    <td>20kn</td>
-                </tr>
-                <tr>
-                    <td>Marelice</td>
-                    <td>2kg</td>
-                    <td>30kn</td>
-                </tr>
-            </tbody>
-            <tfoot style="background-color: yellow;">
-                <tr>
-                    <td>Ukupno:</td>
-                    <td>9kg</td>
-                    <td>150kn</td>
-                </tr>
-            </tfoot>
+      <tr>
+        <td rowspan="3" style="width: 150px">prvi stupac</td>
+        <td width="100">prvi redak</td>
+      </tr>
+      <tr>
+        <td>Drugi redak</td>
+      </tr>
+      <tr>
+        <td>treći redak</td>
+      </tr>
     </table>
-    <hr>
-</body>
+    <hr />
+  </body>
 </html>
